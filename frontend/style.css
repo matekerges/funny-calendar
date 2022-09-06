@@ -1,0 +1,187 @@
+.first-color {
+  background: #d9dad7;
+}
+
+.second-color {
+  background: #c24d2c;
+}
+
+.third-color {
+  background: #3e4a61;
+}
+
+.fourth-color {
+  background: #1a2639;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: #1a2639;
+
+}
+
+#root {
+  margin: 6rem;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.header-container {
+  height: 4rem;
+  width: 100%;
+  background-color: #d9dad7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.year {
+  color: #3e4a61;
+  font-weight: 300;
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+.year-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 2rem 0;
+}
+
+.month-container {
+  width: 14rem;
+  background-color: #3e4a61;
+  margin: .5rem;
+}
+
+.month-name {
+  color: #c24d2c;
+  text-align: center;
+  padding: .5rem 0
+}
+
+.days-week {
+  width: 100%;
+  height: calc(14rem / 8);
+  color: #c24d2c;
+  background-color: #d9dad7;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day-name {
+  width: 2rem;
+  color: #c24d2c;
+  text-align: center;
+  line-height: calc(14rem / 8);
+}
+
+.day:hover {
+  cursor: pointer;
+  color: #c24d2c;
+  background-color: #d9dad7;
+}
+
+.days-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  color: #d9dad7;
+  text-align: center;
+  line-height: calc(14rem / 8);
+}
+
+.month-container:nth-child(n + 7) .days-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.month-container:nth-child(n + 7) .days-container .day,
+.month-container:nth-child(n + 7) .days-container .day-placeholder {
+  height: calc(100% / 6);
+  width: calc(100% / 7);
+}
+
+.month-container:nth-child(12) .days-container .day {
+  display: inline-block;
+  height: calc(100% / 6);
+  width: calc(100% / 7);
+}
+
+@media screen and (max-width: 1000px) {
+  .month-1 {
+    background: url(/pictures/01.jpeg);
+    background-size: 100%;
+  }
+
+  .month-2 {
+    background: url(/pictures/02.jpeg);
+    background-size: 100%;
+  }
+
+  .month-3 {
+    background: url(/pictures/03.jpeg);
+    background-size: 100%;
+  }
+
+  .month-4 {
+    background: url(/pictures/04.jpeg);
+    background-size: 100%;
+  }
+
+  .month-5 {
+    background: url(/pictures/05.jpeg);
+    background-size: 100%;
+  }
+
+  .month-6 {
+    background: url(/pictures/06.jpeg);
+    background-size: 100%;
+  }
+
+  .month-7 {
+    background: url(/pictures/07.jpeg);
+    background-size: 100%;
+  }
+
+  .month-8 {
+    background: url(/pictures/08.jpeg);
+    background-size: 100%;
+  }
+
+  .month-9 {
+    background: url(/pictures/09.jpeg);
+    background-size: 100%;
+  }
+
+  .month-10 {
+    background: url(/pictures/10.jpeg);
+    background-size: 100%;
+  }
+
+  .month-11 {
+    background: url(/pictures/11.jpeg);
+    background-size: 100%;
+  }
+
+  .month-12 {
+    background: url(/pictures/12.jpeg);
+    background-size: 100%;
+  }
+}
+
+.days-effect {
+  background-color: olivedrab;
+}
